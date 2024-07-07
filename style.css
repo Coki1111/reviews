@@ -1,0 +1,63 @@
+:root {
+    --background: #DE8C94;
+    --foreground: #CD6D76;
+    --card: #CD6D76;
+    --card-foreground: hsl(0, 0%, 100%);
+    --primary: #CD6D76;
+    --primary-foreground: hsl(240, 5.9%, 10%);
+    --muted-foreground: hsl(0, 0%, 100%);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--primary-foreground);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--card);
+    color: var(--card-foreground);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171);
+    padding: 17px;
+    border-radius: 10px;
+    transition: transform 0.6s;
+    margin-bottom: 20px;
+  }
+  .container:hover {
+    transform: scale(1.10);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 9px;
+  }
+  .name {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .review {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-bottom: 12px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .date {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+  }
