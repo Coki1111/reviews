@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Lazy Dog";
+    src: url("https://db.onlinewebfonts.com/t/d22a5c6110565292f8e8d0726ffe157b.woff2")format("woff2");
+  } 
+@font-face {
+  font-family: "ADLaM Display";
+  src: url("https://fonts.cdnfonts.com/s/107475/ADLaMDisplay-Regular.woff")format("woff");
+}
+@font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-jp:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+body{
+    background-color: #DE8C94;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+#particles-js{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.container-logo{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: #ECECE6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.171);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    z-index: 1;
+    opacity: 75%;
+    cursor: pointer;
+  }
+  .container-logo:hover{
+    transform: scale(1.10);
+  }
+  .logo{
+    width: 100px;
+    height: 35px;
+  }
+.off-screen-menu{
+  background-color: #ffffff2d;
+  height: 100%;
+  width: 100%;
+  max-height: 600px;
+  max-width: 450px;
+  position: fixed;
+  top: 90px;
+  left: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  overflow: hidden;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  z-index: 4;
+}  
+
+.off-screen-menu.active{
+  left: 0;
+}
+.off-screen-menu-text{
+  font-family: 'Noto Sans JP Variable';
+  font-weight: 600;
+  font-size: calc(20px + 0.5vw);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  transition: 0.3s ease;
+}
+.off-screen-menu a:hover{
+  font-weight: 900;
+}
+.coki-banner{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s;
+  margin: 0 auto;
+  top: 10px;
+  height: 100%;
+  max-height: 70px;
+}
+.coki-banner:hover{
+  transform: scale(1.10);
+}
+.coki-banner img{
+  max-width: 50%;
+  width: 40px;
+  height: auto;
+}
+nav{
+  padding: 1rem;
+  display: flex;
+  background-color: #DE8C94;
+}
+.link-footer{
+  position: fixed;
+  bottom: 2%;
+  right: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.6s;
+  z-index: 3;
+  max-width: 60px;
+  width: 80%;
+}
+.link-footer:hover{
+  transform: scale(1.10);
+}
+.fb-logo{
+  max-width: 60px;
+  width: 80%;
+  height: auto;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 1, 0.164));
+}
+  a:link, a:visited, a:hover, a:active{
+    color: #825357;
+    text-decoration: none;
+  }
